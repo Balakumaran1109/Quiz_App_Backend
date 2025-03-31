@@ -28,7 +28,7 @@ app.use(cors());
 app.use(router);
 
 app.get("/", (req, res) => {
-  res.send("Server Working");
+  res.send("Quiz App Running");
 });
 
 // Routes
@@ -40,7 +40,6 @@ router.put("/timer/updatetimer", protect, updateTimer);
 router.post("/quiz/startquiz", protect, startQuiz);
 router.post("/quiz/savequiz", protect, saveQuiz);
 router.get("/quiz/getquiz", protect, getQuiz);
-// router.put("/timer/updatetimer/:id", protect, updateTimer);
 
 // Connect to DB
 const PORT = process.env.PORT || 5000;
