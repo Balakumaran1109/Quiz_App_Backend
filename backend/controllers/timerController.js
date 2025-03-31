@@ -31,7 +31,7 @@ const getTimer = async (req, res) => {
     let timer = await Timer.findOne({ userId });
 
     if (!timer) {
-      timer = new Timer({ userId, remainingTime: 9 });
+      timer = new Timer({ userId, remainingTime: 900 });
       await timer.save();
     }
 
