@@ -1,13 +1,11 @@
-#  Inventory Management System (Backend)
+#  Flexible Quiz Application - Backend
 
 The Flexible Quiz Application backend is built using Node.js, Express, and MongoDB, providing a robust API to manage quizzes, users, and results. It ensures secure authentication, real-time quiz tracking, and efficient data handling for a seamless quiz experience.
 
 ##  Features
-- Product & stock management
-- Secure authentication & authorization (JWT)
-- CRUD operations for inventory items
-- API endpoints for frontend integration
-- Data persistence using MongoDB
+- **Real-Time Answer Submission:** Auto-submission of answers upon selection.
+- **Category-Based Questions:** Fetch quiz questions based on selected topics.
+- **Performance Tracking:** Stores quiz results and generates reports.
 
 ##  Tech Stack
 - **Backend:** Node.js, Express.js
