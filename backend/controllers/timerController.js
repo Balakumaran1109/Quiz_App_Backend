@@ -31,8 +31,7 @@ const getTimer = async (req, res) => {
     let timer = await Timer.findOne({ userId });
 
     if (!timer) {
-      timer = new Timer({ userId, remainingTime: 900 });
-      await timer.save();
+      return res.status(401).json({ message: "Unauthorized: User not found" });
     }
 
     res.json({ remainingTime: timer.remainingTime });
